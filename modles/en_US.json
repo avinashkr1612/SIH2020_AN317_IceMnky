@@ -80,13 +80,10 @@
                         }
                     ],
                     "samples": [
-                        "how can i reach this place",
-                        "reach",
-                        "i want to reach this place",
-                        "reach {place}",
-                        "how can i reach {place}",
-                        "how do i reach {place}",
-                        "how to reach {place}"
+                        "nearest bus station",
+                        "nearest bus station to {place}",
+                        "nearest train station",
+                        "nearest train station to {place}"
                     ]
                 },
                 {
@@ -377,7 +374,6 @@
                     ]
                 },
                 {
-
                     "name": "visitinseason",
                     "slots": [
                         {
@@ -386,15 +382,12 @@
                             "samples": [
                                 "season is {season}",
                                 "{season}"
-
                             ]
                         }
                     ],
                     "samples": [
-
                         "best places to visit during {season}",
                         "what to visit during {season}"
-
                     ]
                 }
             ],
@@ -638,9 +631,7 @@
                     ]
                 },
                 {
-
                     "name": "season",
-
                     "values": [
                         {
                             "name": {
@@ -886,21 +877,17 @@
                     ]
                 },
                 {
-
                     "name": "visitinseason",
-
                     "confirmationRequired": false,
                     "prompts": {},
                     "slots": [
                         {
-
                             "name": "season",
                             "type": "season",
                             "confirmationRequired": false,
                             "elicitationRequired": true,
                             "prompts": {
                                 "elicitation": "Elicit.Slot.1431078093059.124905881734"
-
                             }
                         }
                     ]
@@ -941,9 +928,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-
                         "value": "please mention the name of place you want to know about"
-
                     }
                 ]
             },
@@ -1047,13 +1032,11 @@
                 ]
             },
             {
-
                 "id": "Elicit.Slot.1431078093059.124905881734",
                 "variations": [
                     {
                         "type": "PlainText",
                         "value": "please mention the season "
-
                     }
                 ]
             }

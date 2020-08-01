@@ -96,24 +96,19 @@
                             "name": "place",
                             "type": "places",
                             "samples": [
+                                "name of place is {place}",
                                 "place is {place}",
                                 "{place}"
                             ]
                         }
                     ],
                     "samples": [
-                        "mention about  {place}",
-                        "what do you know about {place}",
-                        "describe this place",
-                        "what do you know about ",
-                        "what can you tell me about ",
-                        "Describe",
-                        "Say something about ",
-                        "what do you know about  {place}",
-                        "what can you tell me about {place}",
-                        "Describe {place}",
-                        "Tell me something about {place}",
-                        "Say something about {place}"
+                        "what can you tell me about this {place}",
+                        "tell me about this place",
+                        "alexa tell me about {place}",
+                        "please describe about {place}",
+                        "tell me about {place}",
+                        "what can you tell me about this place"
                     ]
                 },
                 {
@@ -130,19 +125,13 @@
                         }
                     ],
                     "samples": [
-                        "what is history behind {place}",
-                        "past",
-                        "history",
-                        "history of this place",
-                        "former times of {place}",
-                        "historical events of {place}",
-                        "the old days of {place}",
-                        "records of {place}",
-                        "ask india tour guide describe  {place}  history",
-                        "history of {place}",
-                        "tell me about past of {place}",
                         "past of {place}",
-                        "{place}  past"
+                        "past of this place",
+                        "history of this place ",
+                        "history of {place}",
+                        "tell me history of {place}",
+                        "alexa tell me history about {place}",
+                        "alexa tell me history about this place"
                     ]
                 },
                 {
@@ -181,11 +170,12 @@
                         }
                     ],
                     "samples": [
-                        "ticket cost",
+                        "tell me about ticket cost",
                         "cost for foreign national to visit {place} ",
                         "cost for indian national to visit {place}",
                         "cost of entry in {place}",
-                        "cost of ticket in {place}"
+                        "cost of ticket in {place}",
+                        "ticket cost"
                     ]
                 },
                 {
@@ -249,7 +239,7 @@
                     "samples": [
                         "arrangement for differently abled people in this place",
                         "arrangement for differently abled people",
-                        "ask india tour guide resources for differently abled people in {place}",
+                        "alexa resources for differently abled people in {place}",
                         "arrangement for differently abled people in {place}",
                         "any arrangement for differently abled people in {place}",
                         "arrangement for diabled in {place}",
@@ -323,6 +313,85 @@
                         "ask for help",
                         "its an emergency"
                     ]
+                },
+                {
+                    "name": "stateplaces",
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "states",
+                            "samples": [
+                                "state name is {state} ",
+                                "{state}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "top places to visit in {state}",
+                        "best place to visit in {state}",
+                        "tell me about places to visit in {state}"
+                    ]
+                },
+                {
+                    "name": "GetDirectionsTo",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "name is {place}",
+                                "is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Get directions to {place}",
+                        "How long does it take to get to {place}",
+                        "How far is {place}",
+                        "How far away is {place}",
+                        "How far to {place}",
+                        "How long to {place}",
+                        "Give me directions to {place}",
+                        "For directions to {place}"
+                    ]
+                },
+                {
+                    "name": "seassontovisit",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "name is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "best timmings to {place}",
+                        "seasson to  this place",
+                        "seasson to visit {place}",
+                        "best seasson to visit {place}"
+                    ]
+                },
+                {
+                    "name": "visitinseasson",
+                    "slots": [
+                        {
+                            "name": "seasson",
+                            "type": "sesson",
+                            "samples": [
+                                "seasson name is {seasson}",
+                                "{seasson}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "best places to visit during {seasson}",
+                        "what to visit during {seasson}"
+                    ]
                 }
             ],
             "types": [
@@ -330,63 +399,36 @@
                     "name": "places",
                     "values": [
                         {
-                            "id": "LB1760",
-                            "name": {
-                                "value": "Lal Bagh",
-                                "synonyms": [
-                                    "lalbagh garden",
-                                    "lal bagh botanical garden",
-                                    "lal bagh gnarde"
-                                ]
-                            }
-                        },
-                        {
-                            "id": "PQ1535",
-                            "name": {
-                                "value": "Purana Qila",
-                                "synonyms": [
-                                    " old fort"
-                                ]
-                            }
-                        },
-                        {
-                            "id": "IG1931",
                             "name": {
                                 "value": "India Gate"
                             }
                         },
                         {
-                            "id": "JM1724",
                             "name": {
                                 "value": "Jantar Mantar"
                             }
                         },
                         {
-                            "id": "JM1656",
                             "name": {
                                 "value": "Jama Masjid"
                             }
                         },
                         {
-                            "id": "RF1639",
                             "name": {
-                                "value": "Red Fort"
+                                "value": "Qutub Minar"
                             }
                         },
                         {
-                            "id": "1",
                             "name": {
-                                "value": "Taj Mahal"
+                                "value": "Red Fort",
+                                "synonyms": [
+                                    "Lal Qila"
+                                ]
                             }
-                        }
-                    ]
-                },
-                {
-                    "name": "home",
-                    "values": [
+                        },
                         {
                             "name": {
-                                "value": "home location"
+                                "value": "taj mahal"
                             }
                         }
                     ]
@@ -395,35 +437,233 @@
                     "name": "states",
                     "values": [
                         {
-                            "id": "agra",
                             "name": {
-                                "value": "agra"
+                                "value": "Ladakh"
                             }
                         },
                         {
-                            "id": "mumbai",
                             "name": {
-                                "value": "mumbai"
+                                "value": "andhra pradesh"
                             }
                         },
                         {
-                            "id": "uttar-pradesh",
                             "name": {
-                                "value": "uttar pradesh",
+                                "value": "arunachal pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "assam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bihar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chhattisgarh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "goa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gujarat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "haryana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "himachal pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jammu & kashmir",
                                 "synonyms": [
-                                    "U P",
-                                    "up",
-                                    "u. p."
+                                    "j and k"
                                 ]
                             }
                         },
                         {
-                            "id": "delhi",
                             "name": {
-                                "value": "delhi",
+                                "value": "jharkhand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "karnataka"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kerala"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "madhya pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "maharashtra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "manipur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "meghalaya"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mizoram"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nagaland"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "odisha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "punjab"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rajasthan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sikkim"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tamil nadu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "telangana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tripura"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uttarakhand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uttar pradesh",
                                 "synonyms": [
-                                    "delhi india",
-                                    "new delhi"
+                                    "up"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "west bengal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Andaman and Nicobar Islands"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chandigarh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dadra and Nagar Haveli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Daman & Diu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Government of NCT of Delhi",
+                                "synonyms": [
+                                    "new delhi",
+                                    "delhi"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lakshadweep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Puducherry"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sesson",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "monsoon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "autumn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spring"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "summer",
+                                "synonyms": [
+                                    "hot weather"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Winter",
+                                "synonyms": [
+                                    "cool weather"
                                 ]
                             }
                         }
@@ -590,6 +830,70 @@
                             }
                         }
                     ]
+                },
+                {
+                    "name": "stateplaces",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "states",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1223928950738.965225155883"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "GetDirectionsTo",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1306595284566.403118370483"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "seassontovisit",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.119584843699.101183873748"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "visitinseasson",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "seasson",
+                            "type": "sesson",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.903941187111.638828693240"
+                            }
+                        }
+                    ]
                 }
             ],
             "delegationStrategy": "ALWAYS"
@@ -627,7 +931,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "please mention place"
+                        "value": "please mention the name of place you want to now about"
                     }
                 ]
             },
@@ -636,7 +940,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "please mention location"
+                        "value": "please mention the name of place you want to know history about"
                     }
                 ]
             },
@@ -672,7 +976,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "please mention the location"
+                        "value": "please mention the place you want to know ticket cost of"
                     }
                 ]
             },
@@ -700,6 +1004,42 @@
                     {
                         "type": "PlainText",
                         "value": "please mention the number"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1223928950738.965225155883",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the state name"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1306595284566.403118370483",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.119584843699.101183873748",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.903941187111.638828693240",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention seasson name"
                     }
                 ]
             }

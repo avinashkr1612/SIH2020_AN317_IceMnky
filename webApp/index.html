@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>India Tourist Giude</title>
+</head>
+
+<body>
+  <form id="myform" action="https://mjnwo2r1m9.execute-api.us-east-1.amazonaws.com/dev/insertdb" method="GET">
+
+    <section class="text-gray-700 body-font relative">
+      <div class="absolute inset-0 bg-gray-300">
+
+      </div>
+      <div class="container  py-24 mx-auto width-500">
+        <div class="bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full relative ">
+          <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">India Tour Guide</h2>
+          <p class="leading-relaxed mb-5 text-gray-600">Enter Destination information Here</p>
+
+          <form id="myform" action="" method="post">
+
+            <input
+              class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+              name="destinationName" id="destinationName" placeholder="Destination Name" type="text">
+
+            <input
+              class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+              name="destinationID" id="destinationID" placeholder="Destination ID" type="text">
+            <!-- 
+            <label class="block mt-4">
+              <span class="text-gray-700">State</span>
+            </label> -->
+            <select name="destState" id="destState"
+              class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4">
+              <!-- <option value="selectState">Select State</option> -->
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+              <option value="Daman and Diu">Daman and Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Ladakh">Ladakh</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="destinationDescription" id="destinationDescription"
+              placeholder="Destination Description"></textarea>
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="destinationHistory" id="destinationHistory" placeholder="Destination History"></textarea>
+
+            <input
+              class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+              name="coordinates" id="coordinates" placeholder="GPS Coordinates" type="text">
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="entryPrerequisites" id="entryPrerequisites" placeholder="Entry Prerequisites"></textarea>
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="governmentPolicies" id="governmentPolicies" placeholder="Government Policies"></textarea>
+
+            <!-- <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="visaNeeds" id="visaNeeds" placeholder="Visa Needs"></textarea> -->
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="timingsToVisit" id="timingsToVisit" placeholder="Timings To visit"></textarea>
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="timingsToVisit" id="sessionToVisit" placeholder="Session To visit"></textarea>
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="howToReach" id="howToReach" placeholder="How to reach"></textarea>
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="recForDifferentlyAbled" id="recForDifferentlyAbled"
+              placeholder="Recommendations for differently abled citizens"></textarea>
+
+
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="thingstoDo" id="similarPlaces" placeholder="Similar Places"></textarea>
+
+            <textarea
+              class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+              name="thingstoDo" id="thingstoDo" placeholder="Things To do"></textarea>
+
+            <button
+              class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+        </div>
+
+      </div>
+  </form>
+  </section>
+
+  <script>
+    // $.fn.serializeObject = function () {
+    //   var o = {};
+    //   var a = this.serializeArray();
+    //   $.each(a, function () {
+    //     if (o[this.name] !== undefined) {
+    //       if (!o[this.name].push) {
+    //         o[this.name] = [o[this.name]];
+    //       }
+    //       o[this.name].push(this.value || '');
+    //     } else {
+    //       o[this.name] = this.value || '';
+    //     }
+    //   });
+    //   return o;
+    // };
+    // var myjson = {};
+
+    // $(function () {
+    //   $('form').submit(function () {
+    //     myjson = JSON.stringify($('form').serializeObject());
+    //     $('#result').text(myjson);
+    //     return false;
+    //   });
+    // });
+
+        // API CALL
+
+        //do something
+
+  </script>
+</body>
+
+</html>

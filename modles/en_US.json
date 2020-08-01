@@ -1,0 +1,708 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "india tour guide",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HowToReachIntent",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "how can i reach this place",
+                        "reach",
+                        "i want to reach this place",
+                        "reach {place}",
+                        "how can i reach {place}",
+                        "how do i reach {place}",
+                        "how to reach {place}"
+                    ]
+                },
+                {
+                    "name": "destinationdescription",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "mention about  {place}",
+                        "what do you know about {place}",
+                        "describe this place",
+                        "what do you know about ",
+                        "what can you tell me about ",
+                        "Describe",
+                        "Say something about ",
+                        "what do you know about  {place}",
+                        "what can you tell me about {place}",
+                        "Describe {place}",
+                        "Tell me something about {place}",
+                        "Say something about {place}"
+                    ]
+                },
+                {
+                    "name": "destinationhistory",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "location is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "what is history behind {place}",
+                        "past",
+                        "history",
+                        "history of this place",
+                        "former times of {place}",
+                        "historical events of {place}",
+                        "the old days of {place}",
+                        "records of {place}",
+                        "ask india tour guide describe  {place}  history",
+                        "history of {place}",
+                        "tell me about past of {place}",
+                        "past of {place}",
+                        "{place}  past"
+                    ]
+                },
+                {
+                    "name": "visaneeds",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "place is {place}",
+                                "location is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "can i visit this place",
+                        "can i visit {place}",
+                        "visa needs for {place}",
+                        "visa requirements of {place}",
+                        "{place} visa needs",
+                        "{place} visa requirements"
+                    ]
+                },
+                {
+                    "name": "entryprerequisites",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "location is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "ticket cost",
+                        "cost for foreign national to visit {place} ",
+                        "cost for indian national to visit {place}",
+                        "cost of entry in {place}",
+                        "cost of ticket in {place}"
+                    ]
+                },
+                {
+                    "name": "policies",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places"
+                        }
+                    ],
+                    "samples": [
+                        "what to not do",
+                        "what to not do in {place}",
+                        "policies",
+                        "government policies",
+                        "government policies for this place",
+                        "ask india tour guide policies  of {place}",
+                        "government policies of {place}",
+                        "policies to remember in {place}",
+                        "things to take care in {place}"
+                    ]
+                },
+                {
+                    "name": "timingstovisit",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "place is {place}",
+                                "location is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "best time  to visit",
+                        "timings to visit",
+                        "ask india tour guide timings to visit {place}",
+                        "timings to visit {place}",
+                        "best time  to visit {place}",
+                        "opening timings of {place}",
+                        "when is {place}  open",
+                        "when is {place} closed",
+                        "timings of {place}"
+                    ]
+                },
+                {
+                    "name": "recfordiffabled",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "location is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "arrangement for differently abled people in this place",
+                        "arrangement for differently abled people",
+                        "ask india tour guide resources for differently abled people in {place}",
+                        "arrangement for differently abled people in {place}",
+                        "any arrangement for differently abled people in {place}",
+                        "arrangement for diabled in {place}",
+                        "arrangement for diabled people in {place}",
+                        "arrangement for senior citizens in {place}"
+                    ]
+                },
+                {
+                    "name": "similarplaces",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "similar to this place",
+                        "similar places",
+                        "ask india tour guide similar places  to {place}",
+                        "places like {place}",
+                        "place like {place}",
+                        "place similar to {place}",
+                        "similar place like {place}"
+                    ]
+                },
+                {
+                    "name": "thingstodo",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places"
+                        }
+                    ],
+                    "samples": [
+                        "things to do near my location",
+                        "task in  {place}",
+                        "things to do in {place}",
+                        "fun activities in {place}",
+                        "things to do near me",
+                        "activities near me",
+                        "fun activities near me",
+                        "task near me"
+                    ]
+                },
+                {
+                    "name": "SOScreateEmergencyList",
+                    "slots": [
+                        {
+                            "name": "phoneNumber",
+                            "type": "AMAZON.PhoneNumber",
+                            "samples": [
+                                "{phoneNumber}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "merge {phoneNumber} to emergency contacts",
+                        "add phone number {phoneNumber} to emergency contacts",
+                        "create emergency list"
+                    ]
+                },
+                {
+                    "name": "SOSaskForHelp",
+                    "slots": [],
+                    "samples": [
+                        "save me",
+                        "sos",
+                        "ask for help",
+                        "its an emergency"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "places",
+                    "values": [
+                        {
+                            "id": "LB1760",
+                            "name": {
+                                "value": "Lal Bagh",
+                                "synonyms": [
+                                    "lalbagh garden",
+                                    "lal bagh botanical garden",
+                                    "lal bagh gnarde"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PQ1535",
+                            "name": {
+                                "value": "Purana Qila",
+                                "synonyms": [
+                                    " old fort"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "IG1931",
+                            "name": {
+                                "value": "India Gate"
+                            }
+                        },
+                        {
+                            "id": "JM1724",
+                            "name": {
+                                "value": "Jantar Mantar"
+                            }
+                        },
+                        {
+                            "id": "JM1656",
+                            "name": {
+                                "value": "Jama Masjid"
+                            }
+                        },
+                        {
+                            "id": "RF1639",
+                            "name": {
+                                "value": "Red Fort"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "Taj Mahal"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "home",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "home location"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "states",
+                    "values": [
+                        {
+                            "id": "agra",
+                            "name": {
+                                "value": "agra"
+                            }
+                        },
+                        {
+                            "id": "mumbai",
+                            "name": {
+                                "value": "mumbai"
+                            }
+                        },
+                        {
+                            "id": "uttar-pradesh",
+                            "name": {
+                                "value": "uttar pradesh",
+                                "synonyms": [
+                                    "U P",
+                                    "up",
+                                    "u. p."
+                                ]
+                            }
+                        },
+                        {
+                            "id": "delhi",
+                            "name": {
+                                "value": "delhi",
+                                "synonyms": [
+                                    "delhi india",
+                                    "new delhi"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "HowToReachIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1401759153855.1555719354336"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "thingstodo",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "destinationdescription",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1264334077595.95957038703"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "destinationhistory",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.492572023562.603565500615"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "visaneeds",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1238860668019.1508208537812"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "entryprerequisites",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.965159957073.723938975537"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "timingstovisit",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.74804980100.685911372395"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "recfordiffabled",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1177785282507.207532277524"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "similarplaces",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.193702793566.1421342169477"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SOScreateEmergencyList",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "phoneNumber",
+                            "type": "AMAZON.PhoneNumber",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.310746300668.1366987353125"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1401759153855.1555719354336",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the location"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1092806320290.591205096778",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.707444170344.657775992285",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please  mention your location"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1264334077595.95957038703",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.492572023562.603565500615",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention location"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1238860668019.1508208537812",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the location"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.74804980100.685911372395",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the location"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1177785282507.207532277524",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the location"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.965159957073.723938975537",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the location"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.883358795725.338060242380",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "very nice choice of place."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.193702793566.1421342169477",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.310746300668.1366987353125",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the number"
+                    }
+                ]
+            }
+        ]
+    }
+}

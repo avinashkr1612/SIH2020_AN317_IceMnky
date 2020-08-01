@@ -377,20 +377,24 @@
                     ]
                 },
                 {
-                    "name": "visitinseasson",
+
+                    "name": "visitinseason",
                     "slots": [
                         {
-                            "name": "seasson",
-                            "type": "sesson",
+                            "name": "season",
+                            "type": "season",
                             "samples": [
-                                "seasson name is {seasson}",
-                                "{seasson}"
+                                "season is {season}",
+                                "{season}"
+
                             ]
                         }
                     ],
                     "samples": [
-                        "best places to visit during {seasson}",
-                        "what to visit during {seasson}"
+
+                        "best places to visit during {season}",
+                        "what to visit during {season}"
+
                     ]
                 }
             ],
@@ -634,7 +638,9 @@
                     ]
                 },
                 {
-                    "name": "sesson",
+
+                    "name": "season",
+
                     "values": [
                         {
                             "name": {
@@ -880,17 +886,21 @@
                     ]
                 },
                 {
-                    "name": "visitinseasson",
+
+                    "name": "visitinseason",
+
                     "confirmationRequired": false,
                     "prompts": {},
                     "slots": [
                         {
-                            "name": "seasson",
-                            "type": "sesson",
+
+                            "name": "season",
+                            "type": "season",
                             "confirmationRequired": false,
                             "elicitationRequired": true,
                             "prompts": {
-                                "elicitation": "Elicit.Slot.903941187111.638828693240"
+                                "elicitation": "Elicit.Slot.1431078093059.124905881734"
+
                             }
                         }
                     ]
@@ -931,7 +941,9 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "please mention the name of place you want to now about"
+
+                        "value": "please mention the name of place you want to know about"
+
                     }
                 ]
             },
@@ -1035,11 +1047,13 @@
                 ]
             },
             {
-                "id": "Elicit.Slot.903941187111.638828693240",
+
+                "id": "Elicit.Slot.1431078093059.124905881734",
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "please mention seasson name"
+                        "value": "please mention the season "
+
                     }
                 ]
             }

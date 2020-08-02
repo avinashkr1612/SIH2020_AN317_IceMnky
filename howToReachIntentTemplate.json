@@ -1,0 +1,39 @@
+{
+        "type": "APL",
+        "version": "1.0",
+        "theme": "dark",
+        "import": [
+            {
+                "name": "alexa-layouts",
+                "version": "1.0.0"
+            }
+        ],
+        "layouts": {},
+        "mainTemplate": {
+            "parameters": [
+                "payload"
+            ],
+            "items": [
+                {
+                    "type": "Container",
+                    "alignItems": "stretch",
+                    "justifyContent": "start",
+                    "direction": "column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "source": "https://image.freepik.com/free-vector/flat-travel-background_23-2148059759.jpg",
+                            "scale": "best-fill",
+                            "width": "100%",
+                            "height": "100%",
+                            "position": "absolute"
+                        }
+                    ],
+                    "width": "100%",
+                    "height": "100%"
+                }
+            ]
+        },
+        "resources": [],
+        "styles": {}
+    }

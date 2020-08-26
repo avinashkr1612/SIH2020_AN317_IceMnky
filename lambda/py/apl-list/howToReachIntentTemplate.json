@@ -1,0 +1,221 @@
+{
+    "document": {
+        "type": "APL",
+        "version": "1.4",
+        "settings": {},
+        "theme": "dark",
+        "import": [
+            {
+                "name": "alexa-layouts",
+                "version": "1.0.0"
+            }
+        ],
+        "resources": [
+            {
+                "description": "Stock color for the light theme",
+                "colors": {
+                    "colorTextPrimary": "#151920"
+                }
+            },
+            {
+                "description": "Stock color for the dark theme",
+                "when": "${viewport.theme == 'dark'}",
+                "colors": {
+                    "colorTextPrimary": "#f0f1ef"
+                }
+            },
+            {
+                "description": "Standard font sizes",
+                "dimensions": {
+                    "textSizeBody": 30,
+                    "textSizePrimary": 27,
+                    "textSizeSecondary": 23,
+                    "textSizeSecondaryHint": 25
+                }
+            },
+            {
+                "description": "Common spacing values",
+                "dimensions": {
+                    "spacingThin": 6,
+                    "spacingSmall": 12,
+                    "spacingMedium": 24,
+                    "spacingLarge": 48,
+                    "spacingExtraLarge": 72
+                }
+            },
+            {
+                "description": "Common margins and padding",
+                "dimensions": {
+                    "marginTop": 40,
+                    "marginLeft": 60,
+                    "marginRight": 60,
+                    "marginBottom": 40
+                }
+            }
+        ],
+        "styles": {
+            "textStyleBase": {
+                "description": "Base font description; set color",
+                "values": [
+                    {
+                        "color": "@colorTextPrimary"
+                    }
+                ]
+            },
+            "textStyleBase0": {
+                "description": "Thin version of basic font",
+                "extend": "textStyleBase",
+                "values": {
+                    "fontWeight": "100"
+                }
+            },
+            "textStyleBase1": {
+                "description": "Light version of basic font",
+                "extend": "textStyleBase",
+                "values": {
+                    "fontWeight": "300"
+                }
+            },
+            "mixinBody": {
+                "values": {
+                    "fontSize": "@textSizeBody"
+                }
+            },
+            "mixinPrimary": {
+                "values": {
+                    "fontSize": "@textSizePrimary"
+                }
+            },
+            "mixinSecondary": {
+                "values": {
+                    "fontSize": "@textSizeSecondary"
+                }
+            },
+            "textStylePrimary": {
+                "extend": [
+                    "textStyleBase1",
+                    "mixinPrimary"
+                ]
+            },
+            "textStyleSecondary": {
+                "extend": [
+                    "textStyleBase0",
+                    "mixinSecondary"
+                ]
+            },
+            "textStyleBody": {
+                "extend": [
+                    "textStyleBase1",
+                    "mixinBody"
+                ]
+            },
+            "textStyleSecondaryHint": {
+                "values": {
+                    "fontFamily": "Bookerly",
+                    "fontStyle": "italic",
+                    "fontSize": "@textSizeSecondaryHint",
+                    "color": "@colorTextPrimary"
+                }
+            }
+        },
+        "onMount": [],
+        "graphics": {},
+        "commands": {},
+        "layouts": {},
+        "mainTemplate": {
+            "parameters": [
+                "payload"
+            ],
+            "items": [
+                {
+                    "type": "Container",
+                    "height": "100vh",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "source": "${payload.bodyTemplate6Data.backgroundImage.sources[0].url}",
+                            "scale": "best-fill",
+                            "width": "100vw",
+                            "height": "100vh",
+                            "position": "absolute"
+                        },
+                        {
+                            "type": "AlexaHeader",
+                            "headerTitle": "${payload.bodyTemplate6Data.title}",
+                            "headerAttributionImage": "${payload.bodyTemplate6Data.logoUrl}"
+                        },
+                        {
+                            "type": "Container",
+                            "grow": 1,
+                            "justifyContent": "${viewport.shape == 'round' ? 'center' : 'end'}",
+                            "items": [
+                                {
+                                    "paddingLeft": "@marginLeft",
+                                    "paddingRight": "@marginRight",
+                                    "type": "Text",
+                                    "text": "${payload.bodyTemplate6Data.textContent.primaryText.text}",
+                                    "style": "textStyleBody",
+                                    "textAlign": "${viewport.shape == 'round' ? 'center' : 'left'}"
+                                }
+                                
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "datasources": {
+        "bodyTemplate6Data": {
+            "type": "object",
+            "objectId": "bt6Sample",
+            "title": "How To Reach Destination \"The Taj Mahal!\" ",
+            "backgroundImage": {
+                "contentDescription": null,
+                "smallSourceUrl": null,
+                "largeSourceUrl": null,
+                "sources": [
+                    {
+                        "url": "https://india-tour-guide.s3.amazonaws.com/taj+mahal.png",
+                        "size": "small",
+                        "widthPixels": 0,
+                        "heightPixels": 0
+                    },
+                    {
+                        "url": "https://india-tour-guide.s3.amazonaws.com/taj+mahal.png",
+                        "size": "large",
+                        "widthPixels": 0,
+                        "heightPixels": 0
+                    }
+                ]
+            },
+            "image": {
+                "contentDescription": null,
+                "smallSourceUrl": null,
+                "largeSourceUrl": null,
+                "sources": [
+                    {
+                        "url": "",
+                        "size": "small",
+                        "widthPixels": 0,
+                        "heightPixels": 0
+                    },
+                    {
+                        "url": "",
+                        "size": "large",
+                        "widthPixels": 0,
+                        "heightPixels": 0
+                    }
+                ]
+            },
+            "textContent": {
+                "primaryText": {
+                    "type": "plaintext",
+                    "text": "You can board a bus from Delhi, Mathura, Jaipur and Fatehpur Sikri to reach Agra; bus is always the more economical way to reach Taj Mahal than flights and trains. We provide private air condition car with all the facilities, You can go via roads it is a journey of just 3.5 to 4 hours from Delhi. "
+                }
+            },
+            "logoUrl": "https://india-tour-guide.s3.amazonaws.com/tourist_guide_logo2.png"
+            }
+    },
+    "sources": {}
+}

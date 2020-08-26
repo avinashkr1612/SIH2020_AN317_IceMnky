@@ -1,0 +1,1179 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "india tour guide",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HowToReachIntent",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places"
+                        }
+                    ],
+                    "samples": [
+                        "how can I reach the destination",
+                        "how can i reach this place",
+                        "i want to reach this place",
+                        "reach {place}",
+                        "how can i reach {place}",
+                        "how do i reach {place}",
+                        "how to reach {place}"
+                    ]
+                },
+                {
+                    "name": "destinationdescription",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "name of place is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "tell me something about {place}",
+                        "description of {place}",
+                        "what can you tell me about this {place}",
+                        "tell me about this place",
+                        "alexa tell me about {place}",
+                        "please describe about {place}",
+                        "tell me about {place}",
+                        "what can you tell me about this place"
+                    ]
+                },
+                {
+                    "name": "destinationhistory",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "location is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "past of {place}",
+                        "past of this place",
+                        "history of this place ",
+                        "history of {place}",
+                        "tell me history of {place}",
+                        "alexa tell me history about {place}",
+                        "alexa tell me history about this place"
+                    ]
+                },
+                {
+                    "name": "visaneeds",
+                    "slots": [
+                        {
+                            "name": "country",
+                            "type": "country"
+                        }
+                    ],
+                    "samples": [
+                        "does {country} citizens require visa to travel india",
+                        "do {country} citizens require visa to travel india",
+                        "passport requirement of {country} citizens to travel to india",
+                        "to travel to india {country} require visa",
+                        "does {country} require visa to travel india",
+                        "do {country} require visa to travel india"
+                    ]
+                },
+                {
+                    "name": "entryprerequisites",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "location is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "tell me about ticket cost",
+                        "cost for foreign national to visit {place} ",
+                        "cost for indian national to visit {place}",
+                        "cost of entry in {place}",
+                        "cost of ticket in {place}",
+                        "ticket cost"
+                    ]
+                },
+                {
+                    "name": "policies",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places"
+                        }
+                    ],
+                    "samples": [
+                        "what to not do",
+                        "what to not do in {place}",
+                        "policies",
+                        "government policies",
+                        "government policies for this place",
+                        "ask india tour guide policies  of {place}",
+                        "government policies of {place}",
+                        "policies to remember in {place}",
+                        "things to take care in {place}"
+                    ]
+                },
+                {
+                    "name": "timingstovisit",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "place is {place}",
+                                "location is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "best time  to visit",
+                        "timings to visit",
+                        "ask india tour guide timings to visit {place}",
+                        "timings to visit {place}",
+                        "best time  to visit {place}",
+                        "opening timings of {place}",
+                        "when is {place}  open",
+                        "when is {place} closed",
+                        "timings of {place}"
+                    ]
+                },
+                {
+                    "name": "recfordiffabled",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "location is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "arrangement for differently abled people in this place",
+                        "arrangement for differently abled people",
+                        "alexa resources for differently abled people in {place}",
+                        "arrangement for differently abled people in {place}",
+                        "any arrangement for differently abled people in {place}",
+                        "arrangement for diabled in {place}",
+                        "arrangement for diabled people in {place}",
+                        "arrangement for senior citizens in {place}"
+                    ]
+                },
+                {
+                    "name": "similarplaces",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "similar to this place",
+                        "similar places",
+                        "ask india tour guide similar places  to {place}",
+                        "places like {place}",
+                        "place like {place}",
+                        "place similar to {place}",
+                        "similar place like {place}"
+                    ]
+                },
+                {
+                    "name": "thingstodo",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places"
+                        }
+                    ],
+                    "samples": [
+                        "things to do near my location",
+                        "task in  {place}",
+                        "things to do in {place}",
+                        "fun activities in {place}",
+                        "things to do near me",
+                        "activities near me",
+                        "fun activities near me",
+                        "task near me"
+                    ]
+                },
+                {
+                    "name": "SOScreateEmergencyList",
+                    "slots": [
+                        {
+                            "name": "phoneNumber",
+                            "type": "AMAZON.PhoneNumber",
+                            "samples": [
+                                "{phoneNumber}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "add {phoneNumber} to emergency list",
+                        "merge {phoneNumber} to emergency contacts",
+                        "add phone number {phoneNumber} to emergency contacts",
+                        "create emergency list"
+                    ]
+                },
+                {
+                    "name": "SOSaskForHelp",
+                    "slots": [],
+                    "samples": [
+                        "i am in an emergency",
+                        "i am in emergency",
+                        "get some help",
+                        "inform emergency contacts",
+                        "inform my emergency contacts",
+                        "save me",
+                        "sos",
+                        "ask for help",
+                        "its an emergency"
+                    ]
+                },
+                {
+                    "name": "stateplaces",
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "states",
+                            "samples": [
+                                "state name is {state} ",
+                                "{state}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "what are the places to visit in {state}",
+                        "give me best places to visit in {state}",
+                        "top places to visit in {state}",
+                        "best place to visit in {state}",
+                        "tell me about places to visit in {state}"
+                    ]
+                },
+                {
+                    "name": "seasontovisit",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "samples": [
+                                "name is {place}",
+                                "place is {place}",
+                                "{place}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "best timmings to {place}",
+                        "season to  this place",
+                        "season to visit {place}",
+                        "best season to visit {place}"
+                    ]
+                },
+                {
+                    "name": "visitinseason",
+                    "slots": [
+                        {
+                            "name": "season",
+                            "type": "season",
+                            "samples": [
+                                "season is {season}",
+                                "{season}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "best places to visit during {season}",
+                        "what to visit during {season}"
+                    ]
+                },
+                {
+                    "name": "SOSremovecontact",
+                    "slots": [
+                        {
+                            "name": "phonenumber",
+                            "type": "AMAZON.PhoneNumber"
+                        }
+                    ],
+                    "samples": [
+                        "remove phone number {phonenumber} from contact",
+                        "remove phone number {phonenumber} from the contact"
+                    ]
+                },
+                {
+                    "name": "MyLocation",
+                    "slots": [],
+                    "samples": [
+                        "What is this place",
+                        "Tell me where I am",
+                        "What I am at",
+                        "Where am I"
+                    ]
+                },
+                {
+                    "name": "SetupTour",
+                    "slots": [
+                        {
+                            "name": "location",
+                            "type": "places"
+                        }
+                    ],
+                    "samples": [
+                        "I am planning to trip to {location}",
+                        "I am taking a trip to {location}",
+                        "Set up my trip to {location}",
+                        "I will be visiting {location}",
+                        "Set up my trip"
+                    ]
+                },
+                {
+                    "name": "restaurants",
+                    "slots": [],
+                    "samples": [
+                        "list me me nearby restaurants",
+                        "tell me nearby restaurants",
+                        "what are the nearby restaurants",
+                        "nearby restaurants",
+                        "show me nearby restaurants"
+                    ]
+                },
+                {
+                    "name": "policestation",
+                    "slots": [],
+                    "samples": [
+                        "what are the nearby police stations",
+                        "nearby police stations",
+                        "tell me nearby police stations"
+                    ]
+                },
+                {
+                    "name": "navigation",
+                    "slots": [
+                        {
+                            "name": "fromCity",
+                            "type": "AMAZON.City",
+                            "samples": [
+                                "It is {fromCity}",
+                                "{fromCity}"
+                            ]
+                        },
+                        {
+                            "name": "toCity",
+                            "type": "AMAZON.City",
+                            "samples": [
+                                "It is {toCity}",
+                                "{toCity}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Give me directions from {fromCity} to {toCity}",
+                        "Give me navigations {fromCity} to {toCity}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "places",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "India Gate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jantar Mantar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jama Masjid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Qutub Minar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Red Fort",
+                                "synonyms": [
+                                    "Lal Qila"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "tajmahal1663",
+                            "name": {
+                                "value": "taj mahal"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "states",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Ladakh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "andhra pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arunachal pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "assam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bihar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chhattisgarh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "goa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gujarat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "haryana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "himachal pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jammu & kashmir",
+                                "synonyms": [
+                                    "j and k"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jharkhand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "karnataka"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kerala"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "madhya pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "maharashtra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "manipur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "meghalaya"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mizoram"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nagaland"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "odisha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "punjab"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rajasthan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sikkim"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tamil nadu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "telangana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tripura"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uttarakhand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uttar pradesh",
+                                "synonyms": [
+                                    "up"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "west bengal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Andaman and Nicobar Islands"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chandigarh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dadra and Nagar Haveli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Daman & Diu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Government of NCT of Delhi",
+                                "synonyms": [
+                                    "new delhi",
+                                    "delhi"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lakshadweep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Puducherry"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "season",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "monsoon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "autumn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spring"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "summer",
+                                "synonyms": [
+                                    "hot weather"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Winter",
+                                "synonyms": [
+                                    "cool weather"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "country",
+                    "values": [
+                        {
+                            "id": "bangladesh",
+                            "name": {
+                                "value": "Bangladesh",
+                                "synonyms": [
+                                    "Bangladeshes",
+                                    "Bangalees"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bhutan",
+                            "name": {
+                                "value": "Bhutan",
+                                "synonyms": [
+                                    "Bhutanese"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "nepal",
+                            "name": {
+                                "value": "nepal",
+                                "synonyms": [
+                                    "Nepali"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "srilanka",
+                            "name": {
+                                "value": "Sri lanka",
+                                "synonyms": [
+                                    "Srilankans",
+                                    "Sinhalese "
+                                ]
+                            }
+                        },
+                        {
+                            "id": "usa",
+                            "name": {
+                                "value": "usa",
+                                "synonyms": [
+                                    "americans",
+                                    "USA",
+                                    "Americans"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "HowToReachIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "thingstodo",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "destinationdescription",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1264334077595.95957038703"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "destinationhistory",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.492572023562.603565500615"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "visaneeds",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "country",
+                            "type": "country",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "entryprerequisites",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.965159957073.723938975537"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "timingstovisit",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.74804980100.685911372395"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "recfordiffabled",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1177785282507.207532277524"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "similarplaces",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.193702793566.1421342169477"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SOScreateEmergencyList",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "phoneNumber",
+                            "type": "AMAZON.PhoneNumber",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.310746300668.1366987353125"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "stateplaces",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "states",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1223928950738.965225155883"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "seasontovisit",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "places",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.119584843699.101183873748"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "visitinseason",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "season",
+                            "type": "season",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1431078093059.124905881734"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "navigation",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "fromCity",
+                            "type": "AMAZON.City",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.292545127774.868822452240"
+                            }
+                        },
+                        {
+                            "name": "toCity",
+                            "type": "AMAZON.City",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.37118640048.815509817048"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1401759153855.1555719354336",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the location"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1092806320290.591205096778",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.707444170344.657775992285",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please  mention your location"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1264334077595.95957038703",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the name of place you want to know about"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.492572023562.603565500615",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the name of place you want to know history about"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.74804980100.685911372395",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the location"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1177785282507.207532277524",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the location"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.965159957073.723938975537",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the place you want to know ticket cost of"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.883358795725.338060242380",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "very nice choice of place."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.193702793566.1421342169477",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.310746300668.1366987353125",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the number"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1223928950738.965225155883",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the state name"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1306595284566.403118370483",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.119584843699.101183873748",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the place"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1431078093059.124905881734",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please mention the season "
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.292545127774.868822452240",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I need an origin."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.37118640048.815509817048",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I need a destination"
+                    }
+                ]
+            }
+        ]
+    }
+}

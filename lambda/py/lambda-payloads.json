@@ -1,0 +1,288 @@
+{
+    "version": "1.0",
+    "session": {
+        "new": true,
+        "sessionId": "amzn1.echo-api.session.e0905c01-57cf-4eb3-8e56-11df87f1a6ee",
+        "application": {
+            "applicationId": "amzn1.ask.skill.c95485e8-6902-4fdf-87d6-873e8b1ef72a"
+        },
+        "user": {
+            "userId": "amzn1.ask.account.AEXJGCUTFLGE7DLFBLJWF3EYO3IO77PJPKTU47HW6ZZ27XYDRLIJSJJ5IP5SYNZTE5UFTTOOBURS53QKATEYD7MDCNNHORI3FWOMLAIPGHDVDKUVBXKNUSI64ESSWFFEETDV2IHP427CJXGKGPGMAO4ZB5ZPFCZY4GRHWGQ4FNYX7QRIARWIMWVKEKSNNERCWX7CWZKSUQ2RWPQ",
+            "permissions": {
+                "scopes": {
+                    "alexa::devices:all:geolocation:read": {
+                        "status": "DENIED"
+                    }
+                }
+            }
+        }
+    },
+    "context": {
+        "Display": {},
+        "Alexa.Presentation.APL": {
+            "token": "helloworldToken",
+            "version": "APL_WEB_RENDERER_GANDALF",
+            "componentsVisibleOnScreen": [
+                {
+                    "uid": ":1000",
+                    "position": "1024x600+0+0:0",
+                    "type": "mixed",
+                    "tags": {
+                        "viewport": {
+                            "canGoBack": null
+                        }
+                    },
+                    "entities": []
+                }
+            ]
+        },
+        "System": {
+            "application": {
+                "applicationId": "amzn1.ask.skill.c95485e8-6902-4fdf-87d6-873e8b1ef72a"
+            },
+            "user": {
+                "userId": "amzn1.ask.account.AEXJGCUTFLGE7DLFBLJWF3EYO3IO77PJPKTU47HW6ZZ27XYDRLIJSJJ5IP5SYNZTE5UFTTOOBURS53QKATEYD7MDCNNHORI3FWOMLAIPGHDVDKUVBXKNUSI64ESSWFFEETDV2IHP427CJXGKGPGMAO4ZB5ZPFCZY4GRHWGQ4FNYX7QRIARWIMWVKEKSNNERCWX7CWZKSUQ2RWPQ",
+                "permissions": {
+                    "scopes": {
+                        "alexa::devices:all:geolocation:read": {
+                            "status": "DENIED"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "deviceId": "amzn1.ask.device.AGWMKGMYPHBO3IT2H6M7NEYOX67ZB4ZTDMWPCN7IDL2DSDSVGXQHDGA5JWORARH333CHBZNLW6ZDQELJG4FXJT3SYVTQJ7QHYHQM5UMPRV7PWCKTFCHPGHZXAWM75HSQMGIIWNSIS6OIMOIXHC2DMSM5AFVZUUAS33RCK4RVSWMTNAE7FWZMC",
+                "supportedInterfaces": {
+                    "Display": {
+                        "templateVersion": "1.0",
+                        "markupVersion": "1.0"
+                    },
+                    "Alexa.Presentation.APL": {
+                        "runtime": {
+                            "maxVersion": "1.4"
+                        }
+                    }
+                }
+            },
+            "apiEndpoint": "https://api.eu.amazonalexa.com",
+            "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmM5NTQ4NWU4LTY5MDItNGZkZi04N2Q2LTg3M2U4YjFlZjcyYSIsImV4cCI6MTU5NjM5MjMwNSwiaWF0IjoxNTk2MzkyMDA1LCJuYmYiOjE1OTYzOTIwMDUsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCc3Y3bXBZN282UHJqQXRzS0hnZmxtS3dFQUFBQUFBQURmZFR3eUIwRXlBUWM1bnQxSmdWbkpaeTZMWG5RVlpjUVZWaEU4Wm8vcVNlR0xVYkE0M2o4TWMyNElINkNHOGhTcEhqRW13MDdSQWVJUXFuVDgrQ3hKZTMyaThheHNKS2lVVkprQmk2SWZJaklCK3BPNVUzWEMrMDVaNDB2bnB6MTg0cVg2TWx5emVaN3U5OHZsUmgveWpUMHNSOXRkaUtBa0h1TzdBdjRveGRmZ1lTbWFGVS9FWFR0QmM0RmNseXBQWVVnNHJZSHlaMWMyVlNhRXYvaGl6RGZjZCtOZFU2LzkzNjYvMG8vU2FHSCsyNENPSW9rWjRuTlVVUkE0eFA1ajJ0WWNLVHNUbExVeFh2ZFRsVmduRml0TlFCM0E4dytGc1pLYm5oWllLVlNJSTBsNE9pdkRPZXdOMmxmSGVycTRzamt6bHFuSkREU1dBNkViQW11WFJobG9NNmxWeW1zdUU5NGY2VXQ3SUNqMXloYXJNTVFYQWw4RTVuMXBPdTRzenRsMWdhRHUrY3EvZEE9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHV01LR01ZUEhCTzNJVDJINk03TkVZT1g2N1pCNFpURE1XUENON0lETDJEU0RTVkdYUUhER0E1SldPUkFSSDMzM0NIQlpOTFc2WkRRRUxKRzRGWEpUM1NZVlRRSjdRSFlIUU01VU1QUlY3UFdDS1RGQ0hQR0haWEFXTTc1SFNRTUdJSVdOU0lTNk9JTU9JWEhDMkRNU001QUZWWlVVQVMzM1JDSzRSVlNXTVROQUU3RldaTUMiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRVhKR0NVVEZMR0U3RExGQkxKV0YzRVlPM0lPNzdQSlBLVFU0N0hXNlpaMjdYWURSTElKU0pKNUlQNVNZTlpURTVVRlRUT09CVVJTNTNRS0FURVlEN01EQ05OSE9SSTNGV09NTEFJUEdIRFZES1VWQlhLTlVTSTY0RVNTV0ZGRUVURFYySUhQNDI3Q0pYR0tHUEdNQU80WkI1WlBGQ1pZNEdSSFdHUTRGTllYN1FSSUFSV0lNV1ZLRUtTTk5FUkNXWDdDV1pLU1VRMlJXUFEifX0.OYJ0Spq2rpBJ9OdQjRjeygJcogCfgBxaMzsDI4Tn0iyKoEZIUmnLfOLwgNrJXpa_rm3xgfC2Fm_muqBPKvlgBCsL6HnW_Foi0u8bmFuwDM6ABSRaKYL-x-raNPV1fZjdldyPBzEJ5oKHN-19c16u58zn8pw1n2ExsDrEtvZM-hP_VucM6Rmwe-A1bImLYU7cRNCixkV6pS3EbgIRzLCdjkvXM10U1Scq1V2mFfZ0ahoMqgBY63po3iQ7rFKgr42DOcQX2SBKXtAs4dLZZXKBj3kAGgdIbpUvDX3QsKKm4EpbnDqVj9b89DnnsdO2yo_llCa5yvkBIkeZmHl5l3wQTA"
+        },
+        "Viewport": {
+            "experiences": [
+                {
+                    "arcMinuteWidth": 246,
+                    "arcMinuteHeight": 144,
+                    "canRotate": false,
+                    "canResize": false
+                }
+            ],
+            "mode": "HUB",
+            "shape": "RECTANGLE",
+            "pixelWidth": 1024,
+            "pixelHeight": 600,
+            "dpi": 160,
+            "currentPixelWidth": 1024,
+            "currentPixelHeight": 600,
+            "touch": [
+                "SINGLE"
+            ],
+            "video": {
+                "codecs": [
+                    "H_264_42",
+                    "H_264_41"
+                ]
+            }
+        },
+        "Viewports": [
+            {
+                "type": "APL",
+                "id": "main",
+                "shape": "RECTANGLE",
+                "dpi": 160,
+                "presentationType": "STANDARD",
+                "canRotate": false,
+                "configuration": {
+                    "current": {
+                        "mode": "HUB",
+                        "video": {
+                            "codecs": [
+                                "H_264_42",
+                                "H_264_41"
+                            ]
+                        },
+                        "size": {
+                            "type": "DISCRETE",
+                            "pixelWidth": 1024,
+                            "pixelHeight": 600
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "request": {
+        "type": "LaunchRequest",
+        "requestId": "amzn1.echo-api.request.d19d30ae-6681-45a7-8ac7-1fb7345fd0a7",
+        "timestamp": "2020-08-02T18:13:25Z",
+        "locale": "en-US",
+        "shouldLinkResultBeReturned": false
+    },
+    "indiatourguide": {
+        "lambda": {
+            "version": "1.0",
+            "session": {
+                "new": false,
+                "sessionId": "amzn1.echo-api.session.24cd8eaf-bf2e-4380-ab75-d8afb26b1a84",
+                "application": {
+                    "applicationId": "amzn1.ask.skill.c95485e8-6902-4fdf-87d6-873e8b1ef72a"
+                },
+                "user": {
+                    "userId": "amzn1.ask.account.AGAMLGQUSNHQZ4IV7KPKDNDF4VKGAWNCH6K75T56JBZ2RM7OGGIW5T6EHZNUKEJU5OYWBE47DP6AURESSQEVK3LYIDW7PVVU6X5W4SIX7VXSPSHIRBUC7ZLOJ4Z6WIDRDMWSMPWRFNVYAZBKON5YUGDPIZBVQ4HNASBGBDYK6DYKJVYDMEZRZWORRWL6UBXP44IYPCO3SNFUZBA",
+                    "permissions": {
+                        "scopes": {
+                            "alexa::devices:all:geolocation:read": {
+                                "status": "DENIED"
+                            }
+                        }
+                    }
+                }
+            },
+            "context": {
+                "Display": {},
+                "Alexa.Presentation.APL": {
+                    "token": "helloworldToken",
+                    "version": "APL_WEB_RENDERER_GANDALF",
+                    "componentsVisibleOnScreen": [
+                        {
+                            "uid": ":1000",
+                            "position": "1024x600+0+0:0",
+                            "type": "mixed",
+                            "tags": {
+                                "viewport": {
+                                    "canGoBack": null
+                                }
+                            },
+                            "entities": []
+                        }
+                    ]
+                },
+                "System": {
+                    "application": {
+                        "applicationId": "amzn1.ask.skill.c95485e8-6902-4fdf-87d6-873e8b1ef72a"
+                    },
+                    "user": {
+                        "userId": "amzn1.ask.account.AGAMLGQUSNHQZ4IV7KPKDNDF4VKGAWNCH6K75T56JBZ2RM7OGGIW5T6EHZNUKEJU5OYWBE47DP6AURESSQEVK3LYIDW7PVVU6X5W4SIX7VXSPSHIRBUC7ZLOJ4Z6WIDRDMWSMPWRFNVYAZBKON5YUGDPIZBVQ4HNASBGBDYK6DYKJVYDMEZRZWORRWL6UBXP44IYPCO3SNFUZBA",
+                        "permissions": {
+                            "scopes": {
+                                "alexa::devices:all:geolocation:read": {
+                                    "status": "DENIED"
+                                }
+                            }
+                        }
+                    },
+                    "device": {
+                        "deviceId": "amzn1.ask.device.AECJMUPS5QGS6K2QGQPQACJQSAGSATPDZFLPNSD3EDKX3OPGPHQONLR5EYJ6BSWKNTUBIJD2XWWE4CAVVMZ3YCZEKI33VORVBSCHNNQF56DSPA7QS5HZR24VQBAFDS57ZECASFBQMEPCK2DY72UO3EQTP7YU42TQEKRUY2YU6VKQW73K4RY7O",
+                        "supportedInterfaces": {
+                            "Display": {
+                                "templateVersion": "1.0",
+                                "markupVersion": "1.0"
+                            },
+                            "Alexa.Presentation.APL": {
+                                "runtime": {
+                                    "maxVersion": "1.4"
+                                }
+                            }
+                        }
+                    },
+                    "apiEndpoint": "https://api.eu.amazonalexa.com",
+                    "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmM5NTQ4NWU4LTY5MDItNGZkZi04N2Q2LTg3M2U4YjFlZjcyYSIsImV4cCI6MTU5NjQ1MjE5MiwiaWF0IjoxNTk2NDUxODkyLCJuYmYiOjE1OTY0NTE4OTIsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCWXhUMURQVVdpNStXa3EzMmRGa1lwS3dFQUFBQUFBQUQ3eHpydzFna0xlSzQrLzVaZEdYWDY4VkpOYlNJaWFvN0lXWFQxc1NhWTZpL2xiNHMrTU9uaTBwN01rQmlTTkRtSUVmNUpFMUhaQWZDS3B2U0JhRW55UTlSdmp1TWkyQk82bGFQcGJoNGNiOEJiSGV4V1A0aVdNVFRzeHJBRHlJTVppR1RJQ2Y1Q3JnSXA3UERUdTBkQ1J0ZFRNcjI0NHloT3ErQXBkbGJsa2RacEF3dUN4VC8yVmtRZ3dpaGJPSGZhUXpVVWhvNkRzYnJDKzBKQVJKV1kyempwdU5IVHBUMmpUd2pKUS9hOXBFYTBJeFNrVzNCWVlLZ0ZNeVp0V0hWeW80MEExTnUxc0IzMzlLbzRSdmh3OTZIK202TnhHSTZ2NENBNXVrZ2FDd3N0SGlrdDJSZkZRT041Zm5aUGhENlRCVFRYbnlDSXFwWUxQNHpYcWJtUGc1VlNRVmVlci9kNDB5dm9SYXY4K1R6VExsWmpwbkx6Qy91eUg5TXlSWWNHc2xoS3R6a1VpeVM4bUE9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFFQ0pNVVBTNVFHUzZLMlFHUVBRQUNKUVNBR1NBVFBEWkZMUE5TRDNFREtYM09QR1BIUU9OTFI1RVlKNkJTV0tOVFVCSUpEMlhXV0U0Q0FWVk1aM1lDWkVLSTMzVk9SVkJTQ0hOTlFGNTZEU1BBN1FTNUhaUjI0VlFCQUZEUzU3WkVDQVNGQlFNRVBDSzJEWTcyVU8zRVFUUDdZVTQyVFFFS1JVWTJZVTZWS1FXNzNLNFJZN08iLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BR0FNTEdRVVNOSFFaNElWN0tQS0ROREY0VktHQVdOQ0g2Szc1VDU2SkJaMlJNN09HR0lXNVQ2RUhaTlVLRUpVNU9ZV0JFNDdEUDZBVVJFU1NRRVZLM0xZSURXN1BWVlU2WDVXNFNJWDdWWFNQU0hJUkJVQzdaTE9KNFo2V0lEUkRNV1NNUFdSRk5WWUFaQktPTjVZVUdEUElaQlZRNEhOQVNCR0JEWUs2RFlLSlZZRE1FWlJaV09SUldMNlVCWFA0NElZUENPM1NORlVaQkEifX0.B4HLscKXjdlEnNrtqCkBJ87IBFtNtpHKJG__gLuFrAV6yXSuD24WFXXypg-fI4-VnLi2iclYf6MJgyB2xPKy2Qtpv2yk5s5yqWOXd8Yl24ya-UgRjoFljF8DDe7HUHJI78Fs5rflo7KRvM4wSISzOD2J0GbgeItbbyqIb4Uuq758cF6bvsh71Ps0cazQKIaNDAKAXh3BHKBkAVTW9DuwlnqHnF-wLRAj9x4vhR9uUW0xc4HjWp8fwpZQFItRtCVLc93tqUapqXyFUg5qAgFem2mqDddxT7zWL-jeQXG4VmYvLgSpFZWaFDk5OH8XbSCPe3KmQ0dHXf10JGodu0A7Qg"
+                },
+                "Viewport": {
+                    "experiences": [
+                        {
+                            "arcMinuteWidth": 246,
+                            "arcMinuteHeight": 144,
+                            "canRotate": false,
+                            "canResize": false
+                        }
+                    ],
+                    "mode": "HUB",
+                    "shape": "RECTANGLE",
+                    "pixelWidth": 1024,
+                    "pixelHeight": 600,
+                    "dpi": 160,
+                    "currentPixelWidth": 1024,
+                    "currentPixelHeight": 600,
+                    "touch": [
+                        "SINGLE"
+                    ],
+                    "video": {
+                        "codecs": [
+                            "H_264_42",
+                            "H_264_41"
+                        ]
+                    }
+                },
+                "Viewports": [
+                    {
+                        "type": "APL",
+                        "id": "main",
+                        "shape": "RECTANGLE",
+                        "dpi": 160,
+                        "presentationType": "STANDARD",
+                        "canRotate": false,
+                        "configuration": {
+                            "current": {
+                                "mode": "HUB",
+                                "video": {
+                                    "codecs": [
+                                        "H_264_42",
+                                        "H_264_41"
+                                    ]
+                                },
+                                "size": {
+                                    "type": "DISCRETE",
+                                    "pixelWidth": 1024,
+                                    "pixelHeight": 600
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "type": "IntentRequest",
+                "requestId": "amzn1.echo-api.request.0d95b171-901c-4cdd-af30-509496036f51",
+                "locale": "en-US",
+                "timestamp": "2020-08-03T10:51:32Z",
+                "intent": {
+                    "name": "navigation",
+                    "confirmationStatus": "NONE",
+                    "slots": {
+                        "toCity": {
+                            "name": "toCity",
+                            "value": "Agra",
+                            "confirmationStatus": "NONE",
+                            "source": "USER",
+                            "slotValue": {
+                                "type": "Simple",
+                                "value": "Agra"
+                            }
+                        },
+                        "fromCity": {
+                            "name": "fromCity",
+                            "value": "greater noida",
+                            "confirmationStatus": "NONE",
+                            "source": "USER",
+                            "slotValue": {
+                                "type": "Simple",
+                                "value": "greater noida"
+                            }
+                        }
+                    }
+                },
+                "dialogState": "STARTED"
+            }
+        }
+    }
+}
